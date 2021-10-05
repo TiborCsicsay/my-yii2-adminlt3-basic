@@ -12,8 +12,8 @@ FontAwesomeAsset::register($this);
 AdminLteAsset::register($this);
 AppAsset::register($this);
 
-$assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
-//$assetDir = Yii::getAlias('@web/adminlte/dist');
+//$assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/adminlte/dist');
+$assetDir = Yii::getAlias('@web/adminlte/dist');
 
 ?>
 <?php $this->beginPage() ?>
@@ -27,7 +27,7 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/admi
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="sidebar-mini layout-fixed sidebar-collapse">
+<body class="sidebar-mini layout-fixed">
 <?php $this->beginBody() ?>
 
 <div class="wrapper">
