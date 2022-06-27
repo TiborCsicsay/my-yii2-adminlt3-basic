@@ -17,6 +17,7 @@ Thumbs.db
 
 # composer itself is not needed
 composer.phar
+composer.lock
 
 # Mac DS_Store Files
 .DS_Store
@@ -29,5 +30,14 @@ phpunit.phar
 tests/_output/*
 tests/_support/_generated
 
-#vagrant folder
+# vagrant folder
 /.vagrant
+
+# lockfile
+composer.lock
+
+# dotenv should not be commited
+.env*
+
+# except for example
+!.env.example

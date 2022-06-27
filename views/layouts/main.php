@@ -27,7 +27,7 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/admi
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body class="sidebar-mini layout-fixed">
+<body class="layout-top-nav">
 <?php $this->beginBody() ?>
 
 <div class="wrapper">
@@ -36,14 +36,14 @@ $assetDir = Yii::$app->assetManager->getPublishedUrl('@vendor/almasaeed2010/admi
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <?= $this->render('sidebar', ['assetDir' => $assetDir]) ?>
+    <?php // $this->render('sidebar', ['assetDir' => $assetDir]) ?>
 
     <!-- Content Wrapper. Contains page content -->
     <?= $this->render('content', ['content' => $content, 'assetDir' => $assetDir]) ?>
     <!-- /.content-wrapper -->
 
     <!-- Control Sidebar -->
-    <?= $this->render('control-sidebar') ?>
+    <?php //$this->render('control-sidebar') ?>
     <!-- /.control-sidebar -->
 
     <!-- Main Footer -->

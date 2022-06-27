@@ -20,8 +20,12 @@
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "symfony/dotenv": "^5.3",
         "hail812/yii2-adminlte3": "~1.1",
+        "webvimark/module-user-management": "^1.0",
+        "lajax/yii2-translate-manager": "^1.8",
         "kartik-v/yii2-grid": "dev-master",
-        "kartik-v/yii2-widget-fileinput": "dev-master"
+        "kartik-v/yii2-widget-fileinput": "dev-master",
+        "symfony/var-dumper": "^6.0",
+        "richardfan1126/yii2-js-register": "*"
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
@@ -39,6 +43,9 @@
         "process-timeout": 1800,
         "fxp-asset": {
             "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
         }
     },
     "scripts": {
